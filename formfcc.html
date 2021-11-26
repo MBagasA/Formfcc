@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="formfcc.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-6 col-lg-offset-3">
+            <h1 id="title">Membuat Formulir Order Checkout Ke Pesan WhatsApp</h1>
+            <p id="description">Silahkan kontak kami</p>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Checkout Ke WhatsApp
+                </div>
+                <div class="panel-body">
+                    <form id="survey-form">
+                        <label for="name" id="name-label">Nama
+                            <input type="text" id="name" class="form-control" placeholder="Nama" required />
+                        </label>
+
+                        <div class="form-group">
+                            <label for="email" id="email-label">Email
+                                <input type="email" id="email" class="form-control" placeholder="Email" required />
+                            </label>
+
+
+                            <div class="form-group">
+                                <label for="number" id="number-label">Age
+                                    <input type="number" id="number" class="form-control" placeholder="Number" min="15"
+                                        max="40" />
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dropdown" id="dropdown-label">Pilih Produk</label>
+                                <select name="product" class="form-control" id="dropdown">
+                                    <option value="">-- Pilih Produk --</option>
+                                    <option value="produk_1">Produk 1</option>
+                                    <option value="produk_2">Produk 2</option>
+                                    <option value="produk_3">Produk 3</option>
+                                </select>
+                            </div>
+
+
+                            <label for="product" id="product-label"> Pilih Product<br>
+
+                                <input type="radio" name="member" value="1" checked /> Gambar 1 <br />
+                                <input type="radio" name="member" value="2" /> Gambar 2 <br />
+                                <input type="radio" name="member" value="3" /> Gambar 3 <br />
+                                <input type="radio" name="member" value="4" /> Gambar 4<br />
+
+                            </label>
+
+
+
+
+                            <label for="albums" id="Pilihan-label"> Silahkan Pilih<br>
+                                <input type="checkbox" value="pilihan 1" /> Pilihan 1 <br />
+                                <input type="checkbox" value="pilihan 2" /> Pilihan 2 <br />
+                                <input type="checkbox" value="pilihan 3" /> Pilihan 3 <br />
+                                <input type="checkbox" value="pilihan 4" /> Pilihan 4<br />
+
+                            </label>
+
+
+                            <div class="form-group">
+                                <label for="comments" id="comments-label">Catatan</label>
+                                <textarea id="comments" class="form-control" rows="3" id="description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button id="submit" type="submit">Pesan via WhatsApp</button>
+                            </div>
+
+                            <div id=" text-info">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
